@@ -1,7 +1,7 @@
 console.log("Entro a GetRequest");
 document.addEventListener("DOMContentLoaded", function() {
 
-  const movieSection = document.getElementById("bodyPelis");
+  const movieSection = document.getElementById("pelis");
   const movies = [];
 
   function loadMovieList() {
@@ -22,9 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
           `
         });
       });
-      new DataTable('#tablaPelis', {
-        responsive: true
-      })
   }
   loadMovieList();
 });
